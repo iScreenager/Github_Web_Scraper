@@ -17,7 +17,7 @@ function getReposPageHtml(url, topic) {
     function getReposLink(html) {
         // cheerio
         let $ = cheerio.load(html);
-        let headingsArr = $(".f3.color-text-secondary.text-normal.lh-condensed");
+        let headingsArr = $(".f3.color-fg-muted.text-normal.lh-condensed");
         console.log(topic);
         for (let i = 0; i < 8; i++) {
             let twoAnchors = $(headingsArr[i]).find("a");
